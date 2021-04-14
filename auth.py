@@ -1,4 +1,15 @@
-#Bank authorisation app for users
+"""This is a banking app with capacity to do authorisation for users.
+
+METHODS:
+Init: Initializes the application
+Register: Enables new users open an account
+Login: Enables account holders access an account
+Bank Operation: Enables account holders carry out operation on account
+Deposit Operation: Enables account holders make deposits
+Withdrawal Operation: Enables account holders withdraw account
+Termination Operation: Enables users continue using, or terminate use of app
+Account Number Generator: Generates account number for new users
+"""
 
 import random
 import datetime
@@ -107,7 +118,7 @@ def depositOperation():
 
 def withdrawalOperation():
     amount = input('Please enter amount to withdraw \n')
-    print(f'Your balance has been debited by {amount}, thank you')
+    print(f'Your balance has been debited by {amount}, thank you \n')
     terminationOperation()
 
 def terminationOperation():
